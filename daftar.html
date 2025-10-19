@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Daftar</title>
+</head>
+<body>
+    <!-- Form pendaftaran sesuai isi PDF -->
+    <h2>Pendaftaran Mahasiswa Baru</h2>
+    <form action="#" method="post"> <!-- Action="#" untuk demo, ganti jika perlu backend -->
+        <label>Nama Lengkap</label>
+        <input type="text" name="nama">
+
+        <label>Alamat</label>
+        <input type="text" name="alamat">
+
+        <label>Tanggal Lahir</label>
+        <input type="date" name="tgl_lahir">
+
+        <label>Tempat Lahir</label>
+        <input type="text" name="tmp_lahir">
+
+        <label>Asal Rumah</label>
+        <input type="text" name="asal_rumah">
+
+        <label>Pekerjaan</label>
+        <input type="text" name="pekerjaan">
+
+        <label>Jenis Kelamin</label>
+        <input type="radio" name="gender" value="laki"> Laki-laki
+        <input type="radio" name="gender" value="perempuan"> Perempuan
+
+        <label>STM/IAN</label>
+        <input type="text" name="stm_ian">
+
+        <input type="submit" value="Simpan">
+    </form>
+    <style>
+        
+        body {
+            background-color: #fff;
+            color: #000;
+            font-family: sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+        h2 {
+            color: #ff0000;
+            font-family: 'Comic Sans MS', sans-serif;
+            border-bottom: 2px solid #000;
+        }
+        form {
+            max-width: 400px; 
+            margin: 0 auto; 
+        }
+        label {
+            display: block; 
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%; 
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #000; 
+        }
+        input[type="submit"] {
+            background-color: #ff0000; 
+            color: #fff;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            form { max-width: 100%; }
+        }
+    </style>
+</body>
+</html>
